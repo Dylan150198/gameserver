@@ -15,7 +15,6 @@ module.exports = {
 
 	getAll(req, res, next) {
 		console.log('gameController.get called')
-
 		// For pool initialization, see above
 		pool.query("SELECT * FROM games", function (err, rows, fields) {
 			// Connection is automatically released when query resolves
@@ -39,7 +38,7 @@ module.exports = {
 	},
 
 	addNewGame(req, res) {
-		console.log('gameController.addNewGame called')
+		console.log('dbDao.controller.addNewGame called')
 		console.dir(req.body)
 
 		// add game to array of games
