@@ -1,0 +1,8 @@
+Huiswerk voor volgende les (4):
+
+1. Maak de register- en login endpoints af.
+2. Maak de game-endpoints werkend met de database. 
+   Dus: maak alle CRUD-functionaliteit werkend. 
+	- update ook je online database!
+
+
