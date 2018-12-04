@@ -29,7 +29,7 @@ module.exports = {
 				console.log(err.sqlMessage)
 				return next(new ApiError(err.sqlMessage, 401))
 			}
-			if (rowS > 0){
+			if (rows > 0){
 				res.status(200).json({message : + "Login OK"}).end()
 			}
 		})
