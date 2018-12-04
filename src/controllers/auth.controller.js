@@ -20,7 +20,7 @@ module.exports = {
 	},
 	login(req, res, next) {
 		console.log('AuthController.register login')
-		const query = 'SELECT * FROM `users` WHERE firstname >= ? AND password = >?'
+		const query = 'SELECT * FROM `users` WHERE `firstname` = ? AND `password` > ?'
 		pool.query(query, 
 			[req.body.firstname, req.body.password], 
 			function (err, rows, fields) {
